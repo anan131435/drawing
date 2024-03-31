@@ -44,6 +44,7 @@ class CanvasView: UIView {
     // **************************Public Method****************************
     
     func saveDrawing() {
+        print("saveDrawing")
         let image = canvasView.drawing.image(from: canvasView.bounds, scale: UIScreen.main.scale)
         let rendition = Rendition(title: "Peki Product", drawing: canvasView.drawing, image: image)
         self.rendition = rendition
@@ -56,6 +57,8 @@ class CanvasView: UIView {
     func restoreDrawing() {
         if let rendition = rendition {
             canvasView.drawing = rendition.drawing
+        } else {
+            print("restoreDrawing failed");
         }
     }
     
@@ -76,9 +79,9 @@ class Coordinator: NSObject {
 
 extension Coordinator: PKCanvasViewDelegate {
   func canvasViewDrawingDidChange(_ canvasView: PKCanvasView) {
-      print("canvasViewDrawingDidChange")
+      
     if !canvasView.drawing.bounds.isEmpty {
-        print("!canvasView.drawing.bounds.isEmpty")
+        
         if self.onSaved != nil {
             self.onSaved!()
         }
