@@ -16,9 +16,12 @@
 		736E7F5C29F1779200853519 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E7F5B29F1779200853519 /* NavigationViewController.swift */; };
 		736E7F5F29F177F900853519 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E7F5E29F177F900853519 /* CanvasView.swift */; };
 		736E7F6229F1FC4700853519 /* Rendition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736E7F6129F1FC4700853519 /* Rendition.swift */; };
+		FDA26082CB64AB082C9FE45F /* libPods-PeKi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 569F340016E8B726F0C7E0D6 /* libPods-PeKi.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		569F340016E8B726F0C7E0D6 /* libPods-PeKi.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PeKi.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F330376E4BDA24334423995 /* Pods-PeKi.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeKi.release.xcconfig"; path = "Target Support Files/Pods-PeKi/Pods-PeKi.release.xcconfig"; sourceTree = "<group>"; };
 		736E7F4129F175FD00853519 /* PeKi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PeKi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		736E7F4429F175FD00853519 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		736E7F4829F175FD00853519 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,6 +35,8 @@
 		736E7F6129F1FC4700853519 /* Rendition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rendition.swift; sourceTree = "<group>"; };
 		736E7F6329F226F800853519 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		736E7F6429F226F800853519 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		73FA25472BB9B0DD00C72722 /* Peki-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Peki-Bridging-Header.h"; sourceTree = "<group>"; };
+		B71BD2BE4B9649B95FB4BE6D /* Pods-PeKi.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PeKi.debug.xcconfig"; path = "Target Support Files/Pods-PeKi/Pods-PeKi.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA26082CB64AB082C9FE45F /* libPods-PeKi.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +56,8 @@
 			children = (
 				736E7F4329F175FD00853519 /* PeKi */,
 				736E7F4229F175FD00853519 /* Products */,
+				AB3D771F13E1ED39F23FA5AC /* Pods */,
+				CF9A5665608E16D4F4F31E69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +81,7 @@
 				736E7F4D29F1760000853519 /* Assets.xcassets */,
 				736E7F4F29F1760000853519 /* LaunchScreen.storyboard */,
 				736E7F5229F1760000853519 /* Info.plist */,
+				73FA25472BB9B0DD00C72722 /* Peki-Bridging-Header.h */,
 			);
 			path = PeKi;
 			sourceTree = "<group>";
@@ -102,6 +111,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		AB3D771F13E1ED39F23FA5AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B71BD2BE4B9649B95FB4BE6D /* Pods-PeKi.debug.xcconfig */,
+				6F330376E4BDA24334423995 /* Pods-PeKi.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF9A5665608E16D4F4F31E69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				569F340016E8B726F0C7E0D6 /* libPods-PeKi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -109,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 736E7F5529F1760000853519 /* Build configuration list for PBXNativeTarget "PeKi" */;
 			buildPhases = (
+				424D8F66D23224807FE955B2 /* [CP] Check Pods Manifest.lock */,
 				736E7F3D29F175FD00853519 /* Sources */,
 				736E7F3E29F175FD00853519 /* Frameworks */,
 				736E7F3F29F175FD00853519 /* Resources */,
+				F88AB417D772FA4E373154AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -168,6 +196,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		424D8F66D23224807FE955B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PeKi-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F88AB417D772FA4E373154AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeKi/Pods-PeKi-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PeKi/Pods-PeKi-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PeKi/Pods-PeKi-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		736E7F3D29F175FD00853519 /* Sources */ = {
@@ -327,6 +397,7 @@
 		};
 		736E7F5629F1760000853519 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B71BD2BE4B9649B95FB4BE6D /* Pods-PeKi.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -351,6 +422,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.drawinghappy.PeKi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Peki/Peki-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -358,6 +430,7 @@
 		};
 		736E7F5729F1760000853519 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F330376E4BDA24334423995 /* Pods-PeKi.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -382,6 +455,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.drawinghappy.PeKi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "Peki/Peki-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

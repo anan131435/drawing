@@ -7,6 +7,7 @@
 
 import UIKit
 import Photos
+
 class RootViewController: UIViewController {
     private lazy var canvasView: CanvasView = {
         let canvasView = CanvasView.init(frame: UIScreen.main.bounds)
@@ -58,7 +59,7 @@ class RootViewController: UIViewController {
     
             PHPhotoLibrary.requestAuthorization(for: .readWrite) { status in
                 if status == .authorized {
-                    if let image = canvasView.fetchImage() {
+                    if let image = self.canvasView.fetchImage() {
                         self.saveImage(image: image)
                     }
                     

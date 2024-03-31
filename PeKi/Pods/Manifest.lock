@@ -1,0 +1,26 @@
+PODS:
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+  - TZImagePickerController (3.8.4):
+    - TZImagePickerController/Basic (= 3.8.4)
+    - TZImagePickerController/Location (= 3.8.4)
+  - TZImagePickerController/Basic (3.8.4)
+  - TZImagePickerController/Location (3.8.4)
+
+DEPENDENCIES:
+  - SVProgressHUD
+  - TZImagePickerController
+
+SPEC REPOS:
+  trunk:
+    - SVProgressHUD
+    - TZImagePickerController
+
+SPEC CHECKSUMS:
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+  TZImagePickerController: f1c9f1cae6ac0e30b31aaa9698f9bf4a7cf5b84f
+
+PODFILE CHECKSUM: 6d08c608e8641f115a8e4f16de6218680543c915
+
+COCOAPODS: 1.13.0
